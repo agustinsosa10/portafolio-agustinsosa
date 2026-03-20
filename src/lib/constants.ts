@@ -28,7 +28,7 @@ export const PROJECTS: ProjectData[] = [
   },
   {
     id: 'mobile',
-    images: ['/projects/aplicacion-movil.webp'],
+    images: ['/projects/aplicacion-movil.webp', '/projects/aplicacion-movil-1.webp', '/projects/aplicacion-movil-2.webp'],
     tags: ['React Native', 'TypeScript', 'Expo', 'Supabase'],
     github: 'https://github.com/agustinsosa10/sist-mantenimiento',
   },
