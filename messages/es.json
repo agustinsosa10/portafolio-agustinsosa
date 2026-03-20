@@ -1,0 +1,97 @@
+{
+  "site": {
+    "name": " Agustin Sosa",
+    "title": "Agustin Sosa — Desarrollador de Software",
+    "description": "Desarrollador de software con enfoque en backend, fullstack y datos. Construyendo soluciones funcionales y escalables con Python, FastAPI, React y Next.js. Basado en San Luis, Argentina.",
+    "email": "agustin.sos.m10@gmail.com",
+    "role": "Desarrollador de Software · Backend · Fullstack",
+    "tagline": "Construyo soluciones funcionales y escalables — desde diseño de APIs REST y modelado de datos hasta aplicaciones web completas con React y Next.js."
+  },
+  "nav": {
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "contact": "Contacto",
+    "cta": "Hablemos",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "hero": {
+    "overline": "Desarrollador de Software · Backend · Fullstack",
+    "cta1": "Ver mis proyectos",
+    "cta2": "Hablemos",
+    "scrollLabel": "Ir a la sección sobre mí"
+  },
+  "about": {
+    "label": "Sobre mí",
+    "title": "Un poco sobre mí",
+    "subtitle": "Desarrollador, orientado a la resolución de problemas y eterno aprendiz.",
+    "photoAlt": "Marcelo Sosa",
+    "bio0": "Soy desarrollador de software basado en San Luis, Argentina, con enfoque en backend, fullstack y análisis de datos. Trabajo con Python, FastAPI, SQL y React para construir soluciones funcionales y escalables — desde el diseño de APIs REST hasta frontends completos con Next.js.",
+    "bio1": "Me gradué como Programador Universitario de Sistemas en la Universidad Nacional de Villa Mercedes y actualmente estoy cursando la Ingeniería en Sistemas de Información en la misma institución. Mi formación me da una base sólida en arquitectura de software, modelado de datos y diseño de sistemas.",
+    "bio2": "Cuento con experiencia en entornos productivos reales, desarrollando features, haciendo debugging y mantenimiento evolutivo de plataformas. Me adapto rápidamente a nuevas tecnologías y contextos, y me motiva resolver problemas reales con código limpio y bien organizado.",
+    "educationLabel": "Formación",
+    "ingSistemas": "Ingeniería en Sistemas de Información",
+    "progUniversitario": "Programador Universitario de Sistemas",
+    "inProgress": "En cursado",
+    "graduated": "Graduado"
+  },
+  "projects": {
+    "label": "Proyectos",
+    "title": "Trabajos seleccionados",
+    "subtitle": "Proyectos construidos con tecnologías reales, enfocados en resolver problemas concretos.",
+    "featuredLabel": "Proyecto destacado",
+    "codeLabel": "Código",
+    "liveLabel": "Ver sitio",
+    "items": {
+      "autoservicio": {
+        "title": "Sistema de Autoservicio",
+        "description": "Aplicación web para toma de pedidos en locales gastronómicos. Funciona a través de tres interfaces: cliente (navegación y realización de pedidos), cocina (cola de pedidos en tiempo real para cocineros) y administrador (gestión de productos y usuarios). Construido con Next.js App Router, Prisma ORM, PostgreSQL y NextAuth.js."
+      },
+      "mobile": {
+        "title": "Aplicacion movil para turismo",
+        "description": "Aplicación móvil para turismo en Argentina. Incluye información sobre actividades culturales, gastronómicas y turísticas. Construido con React Native, TypeScript, Expo y Supabase."
+      },
+      "inventario": {
+        "title": "Sistema de Gestión (En proceso)",
+        "description": "Servicio backend para gestión de inventario construido con Python y FastAPI. Containerizado con Docker, con foco en modelado de datos limpio, endpoints CRUD y buenas prácticas de organización de código."
+      }
+    }
+  },
+  "skills": {
+    "label": "Habilidades",
+    "title": "Con qué trabajo",
+    "subtitle": "Tecnologías que uso para construir sistemas backend, aplicaciones fullstack y soluciones de datos.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "data": "Bases de datos y Herramientas"
+    }
+  },
+  "experience": {
+    "label": "Experiencia",
+    "title": "Dónde trabajé",
+    "subtitle": "Experiencia profesional en entornos productivos reales.",
+    "items": {
+      "dagatek": {
+        "role": "Software Developer",
+        "company": "Dagatek – Software Solutions Startup",
+        "description": "Desarrollo fullstack en entorno productivo real, trabajando sobre codebase existente dentro de un equipo multidisciplinario.",
+        "highlight0": "Completé y extendí landings en producción con Next.js y TailwindCSS, implementando nuevas secciones y features",
+        "highlight1": "Debugging y mantenimiento evolutivo: identificación y corrección de errores funcionales en interfaces, asegurando consistencia visual",
+        "highlight2": "Visibilidad en stack backend: entorno con FastAPI, PostgreSQL y Docker — colaboré en la containerización del backend con Docker Compose",
+        "highlight3": "Flujo profesional con Git/GitHub, trabajo orientado a entregas por proyecto en equipo"
+      }
+    }
+  },
+  "contact": {
+    "label": "Contacto",
+    "title": "Trabajemos juntos",
+    "subtitle": "¿Tenés un proyecto en mente o querés conectar? Me encantaría saber de vos."
+  },
+  "footer": {
+    "role": "Desarrollador de Software · Backend · Fullstack",
+    "copyright": "Todos los derechos reservados."
+  }
+}

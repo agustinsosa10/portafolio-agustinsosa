@@ -1,0 +1,97 @@
+{
+  "site": {
+    "name": "Agustin Sosa",
+    "title": "Agustin Sosa — Software Developer",
+    "description": "Software developer focused on backend, fullstack, and data. Building functional and scalable solutions with Python, FastAPI, React, and Next.js. Based in San Luis, Argentina.",
+    "email": "agustin.sos.m10@gmail.com",
+    "role": "Software Developer · Backend · Fullstack",
+    "tagline": "I build functional, scalable solutions — from REST API design and data modeling to full-featured web applications with React and Next.js."
+  },
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact",
+    "cta": "Get in Touch",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "overline": "Software Developer · Backend · Fullstack",
+    "cta1": "View My Projects",
+    "cta2": "Get in Touch",
+    "scrollLabel": "Scroll to about section"
+  },
+  "about": {
+    "label": "About",
+    "title": "A bit about me",
+    "subtitle": "Developer, problem-solver, and lifelong learner.",
+    "photoAlt": "Marcelo Sosa",
+    "bio0": "I'm a software developer based in San Luis, Argentina, focused on backend, fullstack, and data solutions. I work with Python, FastAPI, SQL, and React to build functional and scalable applications — from REST API design to full-featured frontends with Next.js.",
+    "bio1": "I graduated as a Systems Programmer from the Universidad Nacional de Villa Mercedes and I'm currently pursuing my Systems Engineering degree at the same institution. My academic background gives me a solid foundation in software architecture, data modeling, and systems design.",
+    "bio2": "I have real production experience developing features, debugging, and maintaining platforms in professional environments. I adapt quickly to new technologies and contexts, and I'm driven by solving real problems with clean, well-organized code.",
+    "educationLabel": "Education",
+    "ingSistemas": "Systems Engineering",
+    "progUniversitario": "Graduated — Systems Programmer",
+    "inProgress": "In progress",
+    "graduated": "Graduated"
+  },
+  "projects": {
+    "label": "Projects",
+    "title": "Selected Work",
+    "subtitle": "Projects built with real technologies, focused on solving concrete problems.",
+    "featuredLabel": "Featured Project",
+    "codeLabel": "Code",
+    "liveLabel": "Live",
+    "items": {
+      "autoservicio": {
+        "title": "Self-Service Ordering System",
+        "description": "Web application for order management in gastronomic establishments. Operates across three interfaces: customer (browsing and placing orders), kitchen (real-time order queue for cooks), and admin (product and user management). Built with Next.js App Router, Prisma ORM, PostgreSQL, and NextAuth.js."
+      },
+      "mobile": {
+        "title": "Tourism Mobile App",
+        "description": "Full-stack management system with a containerized architecture. React/TypeScript frontend, FastAPI Python backend with Swagger documentation, and PostgreSQL hosted on Railway. Multi-container deployment via Docker Compose."
+      },
+      "inventario": {
+        "title": "Inventory System (In Progress)",
+        "description": "Backend service for inventory management built with Python and FastAPI. Containerized with Docker, focused on clean data modeling, CRUD endpoints, and good code organization practices."
+      }
+    }
+  },
+  "skills": {
+    "label": "Skills",
+    "title": "What I Work With",
+    "subtitle": "Technologies I use to build backend systems, fullstack applications, and data solutions.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "data": "Databases & Tools"
+    }
+  },
+  "experience": {
+    "label": "Experience",
+    "title": "Where I've Worked",
+    "subtitle": "Professional experience in real production environments.",
+    "items": {
+      "dagatek": {
+        "role": "Software Developer",
+        "company": "Dagatek – Software Solutions Startup",
+        "description": "Fullstack development in a real production environment, working on an existing codebase within a multidisciplinary team.",
+        "highlight0": "Completed and extended production landings with Next.js and TailwindCSS, implementing new sections and features",
+        "highlight1": "Debugging and evolutive maintenance: identified and fixed functional errors in interfaces, ensuring visual consistency",
+        "highlight2": "Backend visibility: worked in an environment with FastAPI, PostgreSQL, and Docker — collaborated on backend containerization with Docker Compose",
+        "highlight3": "Professional Git/GitHub workflow, delivering project-oriented results in a team setting"
+      }
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Let's Work Together",
+    "subtitle": "Have a project in mind or want to connect? I'd love to hear from you."
+  },
+  "footer": {
+    "role": "Software Developer · Backend · Fullstack",
+    "copyright": "All rights reserved."
+  }
+}
