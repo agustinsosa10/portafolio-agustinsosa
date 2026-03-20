@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { ArrowDown } from 'lucide-react'
+import { ArrowDown, Download } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
 export default function Hero() {
@@ -59,6 +59,14 @@ export default function Hero() {
           </a>
           <a href="#contact" className="btn-outline">
             {t('cta2')}
+          </a>
+          <a
+            href="/CV_Marcelo_Sosa_Developer.pdf"
+            download
+            className="btn-outline flex items-center gap-2"
+          >
+            <Download className="w-4 h-4" />
+            {t('ctaCV')}
           </a>
         </div>
       </div>
