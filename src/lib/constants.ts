@@ -20,23 +20,21 @@ export const NAV_HREFS = [
 
 export const PROJECTS: ProjectData[] = [
   {
-    id: 'autoservicio',
-    images: ['/projects/sistema-autoservicio.webp', '/projects/sistema-autoservicio-1.webp', '/projects/sistema-autoservicio-2.webp'],
-    tags: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'TailwindCSS', 'NextAuth.js'],
-    github: 'https://github.com/agustinsosa10/sistemaAutoservicio',
+    id: 'ies',
+    images: ['/projects/ies-desarrollos-1.png', '/projects/ies-desarrollos-2.png', '/projects/ies-desarrollos-3.png'],
+    tags: ['Next.js', 'TypeScript', 'TailwindCSS', 'Sanity CMS', 'Vercel'],
     featured: true,
   },
   {
-    id: 'mobile',
-    images: ['/projects/aplicacion-movil.webp', '/projects/aplicacion-movil-1.webp', '/projects/aplicacion-movil-2.webp'],
-    tags: ['React Native', 'TypeScript', 'Expo', 'Supabase'],
-    github: 'https://github.com/agustinsosa10/sist-mantenimiento',
+    id: 'saas',
+    images: ['/projects/saas-platform.webp'],
+    tags: ['Next.js', 'TypeScript', 'FastAPI', 'PostgreSQL', 'Docker', 'Claude Code'],
   },
   {
-    id: 'inventario',
-    images: ['/projects/sistema-gestion.webp'],
-    tags: ['Python', 'FastAPI', 'Docker'],
-    github: 'https://github.com/agustinsosa10/sistema-inventario',
+    id: 'autoservicio',
+    images: ['/projects/sistema-autoservicio.webp', '/projects/sistema-autoservicio-1.webp', '/projects/sistema-autoservicio-2.webp'],
+    tags: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'NextAuth.js', 'TailwindCSS'],
+    github: 'https://github.com/agustinsosa10/sistemaAutoservicio',
   },
 ]
 
@@ -47,9 +45,9 @@ export const SKILL_NAMES: Record<string, string[]> = {
     'React Native',
     'TypeScript',
     'TailwindCSS',
-    'HTML & CSS',
-    'Prisma ORM',
+    'HTML5 & CSS3',
     'NextAuth.js',
+    'Responsive Design'
   ],
   backend: [
     'Python / FastAPI',
@@ -59,6 +57,8 @@ export const SKILL_NAMES: Record<string, string[]> = {
     'Docker / Docker Compose',
     'Postman',
     'Supabase',
+    'Sanity CMS',
+    'Prisma ORM',
   ],
   data: [
     'PostgreSQL',

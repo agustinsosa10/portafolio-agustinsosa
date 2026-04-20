@@ -10,11 +10,17 @@ import { PROJECTS } from '@/lib/constants'
 export default function Projects() {
   const t = useTranslations('projects')
 
-  const projects = PROJECTS.map((p) => ({
-    ...p,
-    title: t(`items.${p.id}.title` as Parameters<typeof t>[0]),
-    description: t(`items.${p.id}.description` as Parameters<typeof t>[0]),
-  }))
+  const projects = PROJECTS.map((p) => {
+    const badgeKey = `items.${p.id}.badge` as Parameters<typeof t>[0]
+    let badge = ''
+    try { badge = t(badgeKey) } catch { badge = '' }
+    return {
+      ...p,
+      title: t(`items.${p.id}.title` as Parameters<typeof t>[0]),
+      description: t(`items.${p.id}.description` as Parameters<typeof t>[0]),
+      badge,
+    }
+  })
 
   const featured = projects.find((p) => p.featured)
   const others = projects.filter((p) => !p.featured)
@@ -42,9 +48,14 @@ export default function Projects() {
               </div>
               <div className="lg:col-span-2 p-8 lg:p-10 flex flex-col justify-center">
                 <p className="section-label">{t('featuredLabel')}</p>
-                <h3 className="font-display text-2xl lg:text-3xl font-semibold text-brand-text mb-4">
+                <h3 className="font-display text-2xl lg:text-3xl font-semibold text-brand-text mb-2">
                   {featured.title}
                 </h3>
+                {featured.badge && (
+                  <p className="text-xs uppercase tracking-wide text-brand-accent font-medium mb-4">
+                    {featured.badge}
+                  </p>
+                )}
                 <p className="text-brand-body leading-relaxed mb-6">
                   {featured.description}
                 </p>
@@ -97,9 +108,14 @@ export default function Projects() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="p-6">
-                  <h3 className="font-display text-xl font-semibold text-brand-text mb-2">
+                  <h3 className="font-display text-xl font-semibold text-brand-text mb-1">
                     {project.title}
                   </h3>
+                  {project.badge && (
+                    <p className="text-xs uppercase tracking-wide text-brand-accent font-medium mb-2">
+                      {project.badge}
+                    </p>
+                  )}
                   <p className="text-sm text-brand-body leading-relaxed mb-4">
                     {project.description}
                   </p>

@@ -5,7 +5,7 @@ import ScrollReveal from '@/components/ui/ScrollReveal'
 import SectionHeader from '@/components/ui/SectionHeader'
 import { EXPERIENCE_IDS, EXPERIENCE_PERIODS } from '@/lib/constants'
 
-const HIGHLIGHT_COUNT = 4
+const HIGHLIGHT_COUNT = 3
 
 export default function Experience() {
   const t = useTranslations('experience')

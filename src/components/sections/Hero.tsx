@@ -61,7 +61,7 @@ export default function Hero() {
             {t('cta2')}
           </a>
           <a
-            href="/CV_Marcelo_Sosa_Developer.pdf"
+            href="/CV_Marcelo_Sosa.pdf"
             download
             className="btn-outline flex items-center gap-2"
           >
