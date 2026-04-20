@@ -27,7 +27,7 @@ export const PROJECTS: ProjectData[] = [
   },
   {
     id: 'saas',
-    images: ['/projects/saas-platform.webp'],
+    images: ['/projects/saas-1.png', '/projects/saas-2.png', '/projects/saas-3.png', '/projects/saas-4.png'],
     tags: ['Next.js', 'TypeScript', 'FastAPI', 'PostgreSQL', 'Docker', 'Claude Code'],
   },
   {
