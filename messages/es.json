@@ -60,6 +60,16 @@
         "title": "Sistema de Autoservicio Gastronómico",
         "badge": "",
         "description": "Aplicación web para toma de pedidos en locales gastronómicos. Funciona a través de tres interfaces: cliente (navegación y realización de pedidos), cocina (cola de pedidos en tiempo real para cocineros) y administrador (gestión de productos y usuarios). Construido con Next.js App Router, Prisma ORM, PostgreSQL y NextAuth.js."
+      },
+      "luso": {
+        "title": "Sitio Web — Luso Estudio",
+        "badge": "Cliente · En producción",
+        "description": "Primer sitio web de Luso Estudio, estudio creativo argentino de branding, redes sociales, diseño web y producción audiovisual. One-page con hero animado, listado de servicios con páginas propias por servicio, galería de proyectos destacados, proceso de trabajo y CTA principal a WhatsApp como canal de conversión. 100% estático con Next.js, tipografías de marca locales y animaciones livianas. Publicado en lusoestudio.com.ar."
+      },
+      "mobile": {
+        "title": "TuristeAR — App Móvil de Turismo",
+        "badge": "",
+        "description": "Aplicación móvil para descubrir actividades turísticas, culturales y gastronómicas en Argentina. Incluye actividades destacadas, búsqueda y filtros por categoría, fichas de detalle con precio, duración, dificultad y contacto directo por WhatsApp, favoritos por usuario y panel de administración. Construida con React Native, TypeScript, Expo y Supabase."
       }
     }
   },

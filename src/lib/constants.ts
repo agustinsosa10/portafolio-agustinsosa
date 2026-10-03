@@ -26,6 +26,12 @@ export const PROJECTS: ProjectData[] = [
     featured: true,
   },
   {
+    id: 'luso',
+    images: ['/projects/luso-1.webp', '/projects/luso-2.webp', '/projects/luso-3.webp', '/projects/luso-4.webp'],
+    tags: ['Next.js', 'React', 'TypeScript', 'TailwindCSS', 'Framer Motion', 'Vercel'],
+    live: 'https://lusoestudio.com.ar',
+  },
+  {
     id: 'saas',
     images: ['/projects/saas-1.png', '/projects/saas-2.png', '/projects/saas-3.png', '/projects/saas-4.png'],
     tags: ['Next.js', 'TypeScript', 'FastAPI', 'PostgreSQL', 'Docker', 'Claude Code'],
@@ -35,6 +41,11 @@ export const PROJECTS: ProjectData[] = [
     images: ['/projects/sistema-autoservicio.webp', '/projects/sistema-autoservicio-1.webp', '/projects/sistema-autoservicio-2.webp'],
     tags: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'NextAuth.js', 'TailwindCSS'],
     github: 'https://github.com/agustinsosa10/sistemaAutoservicio',
+  },
+  {
+    id: 'mobile',
+    images: ['/projects/turistear.webp'],
+    tags: ['React Native', 'TypeScript', 'Expo', 'Supabase'],
   },
 ]
 
