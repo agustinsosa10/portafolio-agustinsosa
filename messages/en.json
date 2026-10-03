@@ -60,6 +60,16 @@
         "title": "Self-Service Ordering System",
         "badge": "",
         "description": "Web application for order management in gastronomic establishments. Operates across three interfaces: customer (browsing and placing orders), kitchen (real-time order queue for cooks), and admin (product and user management). Built with Next.js App Router, Prisma ORM, PostgreSQL, and NextAuth.js."
+      },
+      "luso": {
+        "title": "Website — Luso Estudio",
+        "badge": "Client · Live",
+        "description": "First website for Luso Estudio, an Argentine creative studio focused on branding, social media, web design and audiovisual production. One-page site with an animated hero, a services list with dedicated pages per service, a featured projects gallery, a work-process section and a primary WhatsApp CTA as the conversion channel. Fully static with Next.js, self-hosted brand fonts and lightweight animations. Live at lusoestudio.com.ar."
+      },
+      "mobile": {
+        "title": "TuristeAR — Tourism Mobile App",
+        "badge": "",
+        "description": "Mobile app to discover tourism, cultural and food experiences across Argentina. Features highlighted activities, search and category filters, detail pages with price, duration, difficulty and direct WhatsApp contact, per-user favorites and an admin panel. Built with React Native, TypeScript, Expo and Supabase."
       }
     }
   },
