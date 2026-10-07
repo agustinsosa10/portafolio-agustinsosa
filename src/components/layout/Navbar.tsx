@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { NAV_HREFS } from '@/lib/constants'
+import { Link } from '@/i18n/navigation'
 import LanguageSwitcher from './LanguageSwitcher'
 
 export default function Navbar() {
@@ -30,31 +31,31 @@ export default function Navbar() {
     >
       <nav className="section-container">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          <a
-            href="#"
+          <Link
+            href="/"
             className="font-display text-xl font-semibold text-brand-text tracking-tight"
           >
             {tSite('name')}
-          </a>
+          </Link>
 
           <ul className="hidden lg:flex items-center gap-1">
             {NAV_HREFS.map((link) => (
               <li key={link.href}>
-                <a
+                <Link
                   href={link.href}
                   className="px-4 py-2 text-sm text-brand-body font-medium transition-colors duration-200 hover:text-brand-accent"
                 >
                   {t(link.key as Parameters<typeof t>[0])}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
 
           <div className="hidden lg:flex items-center gap-5">
             <LanguageSwitcher />
-            <a href="#contact" className="btn-primary text-sm">
+            <Link href="/#contact" className="btn-primary text-sm">
               {t('cta')}
-            </a>
+            </Link>
           </div>
 
           <div className="lg:hidden flex items-center gap-4">
@@ -78,23 +79,23 @@ export default function Navbar() {
         >
           <div className="pb-4 border-t border-brand-border pt-4 space-y-1">
             {NAV_HREFS.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 onClick={handleNavClick}
                 className="block px-4 py-3 text-sm text-brand-body font-medium transition-colors duration-200 hover:text-brand-accent"
               >
                 {t(link.key as Parameters<typeof t>[0])}
-              </a>
+              </Link>
             ))}
             <div className="pt-3 px-4">
-              <a
-                href="#contact"
+              <Link
+                href="/#contact"
                 onClick={handleNavClick}
                 className="btn-primary w-full text-center text-sm"
               >
                 {t('cta')}
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,7 +1,8 @@
 'use client'
 
-import { ExternalLink, Github } from 'lucide-react'
+import { ArrowRight, ExternalLink, Github } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
 import ScrollReveal from '@/components/ui/ScrollReveal'
 import SectionHeader from '@/components/ui/SectionHeader'
 import ProjectCarousel from '@/components/ui/ProjectCarousel'
@@ -92,6 +93,13 @@ export default function Projects() {
                       {t('liveLabel')}
                     </a>
                   )}
+                  <Link
+                    href={`/proyectos/${featured.slug}`}
+                    className="inline-flex items-center gap-2 text-sm font-medium text-brand-body hover:text-brand-accent transition-colors"
+                  >
+                    {t('detailLabels.viewDetail')}
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -152,6 +160,13 @@ export default function Projects() {
                         {t('liveLabel')}
                       </a>
                     )}
+                    <Link
+                      href={`/proyectos/${project.slug}`}
+                      className="inline-flex items-center gap-2 text-sm font-medium text-brand-body hover:text-brand-accent transition-colors"
+                    >
+                      {t('detailLabels.viewDetail')}
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -1,8 +1,9 @@
 // Non-translatable data: ids, images, hrefs, tech tags, icon names, periods.
 // All visible text lives in messages/en.json and messages/es.json.
 
-interface ProjectData {
+export interface ProjectData {
   id: string
+  slug: string
   images: string[]
   tags: string[]
   github?: string
@@ -11,39 +12,44 @@ interface ProjectData {
 }
 
 export const NAV_HREFS = [
-  { key: 'about', href: '#about' },
-  { key: 'projects', href: '#projects' },
-  { key: 'skills', href: '#skills' },
-  { key: 'experience', href: '#experience' },
-  { key: 'contact', href: '#contact' },
+  { key: 'about', href: '/#about' },
+  { key: 'projects', href: '/#projects' },
+  { key: 'skills', href: '/#skills' },
+  { key: 'experience', href: '/#experience' },
+  { key: 'contact', href: '/#contact' },
 ]
 
 export const PROJECTS: ProjectData[] = [
   {
     id: 'ies',
+    slug: 'ies-desarrollos',
     images: ['/projects/ies-desarrollos-1.png', '/projects/ies-desarrollos-2.png', '/projects/ies-desarrollos-3.png'],
     tags: ['Next.js', 'TypeScript', 'TailwindCSS', 'Sanity CMS', 'Vercel'],
     featured: true,
   },
   {
     id: 'luso',
+    slug: 'luso-estudio',
     images: ['/projects/luso-1.webp', '/projects/luso-2.webp', '/projects/luso-3.webp', '/projects/luso-4.webp'],
     tags: ['Next.js', 'React', 'TypeScript', 'TailwindCSS', 'Framer Motion', 'Vercel'],
     live: 'https://lusoestudio.com.ar',
   },
   {
     id: 'saas',
+    slug: 'plataforma-saas',
     images: ['/projects/saas-1.png', '/projects/saas-2.png', '/projects/saas-3.png', '/projects/saas-4.png'],
     tags: ['Next.js', 'TypeScript', 'FastAPI', 'PostgreSQL', 'Docker', 'Claude Code'],
   },
   {
     id: 'autoservicio',
+    slug: 'autoservicio-gastronomico',
     images: ['/projects/sistema-autoservicio.webp', '/projects/sistema-autoservicio-1.webp', '/projects/sistema-autoservicio-2.webp'],
     tags: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'NextAuth.js', 'TailwindCSS'],
     github: 'https://github.com/agustinsosa10/sistemaAutoservicio',
   },
   {
     id: 'mobile',
+    slug: 'turistear',
     images: ['/projects/turistear.webp'],
     tags: ['React Native', 'TypeScript', 'Expo', 'Supabase'],
   },
