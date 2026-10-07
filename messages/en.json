@@ -45,31 +45,152 @@
     "featuredLabel": "Featured Project",
     "codeLabel": "Code",
     "liveLabel": "Live",
+    "detailLabels": {
+      "back": "Back to projects",
+      "context": "Context",
+      "role": "My role",
+      "period": "Period",
+      "stack": "Stack",
+      "challenges": "Technical decisions & challenges",
+      "prev": "Previous",
+      "next": "Next",
+      "viewDetail": "View details"
+    },
     "items": {
       "ies": {
         "title": "Corporate Website — IES Desarrollos Inmobiliarios",
         "badge": "In development · Upcoming launch",
-        "description": "Corporate website in development for IES Desarrollos Inmobiliarios, a construction company based in Salta, Argentina. Features a multi-slide hero, a projects catalog with dynamic filters by status, slug-based detail pages, a contact form with WhatsApp integration, and Sanity headless CMS for client-managed content. Developed at Dagatek. Will soon replace the current website at iesdesarrollos.com.ar."
+        "description": "Corporate website in development for IES Desarrollos Inmobiliarios, a construction company based in Salta, Argentina. Features a multi-slide hero, a projects catalog with dynamic filters by status, slug-based detail pages, a contact form with WhatsApp integration, and Sanity headless CMS for client-managed content. Developed at Dagatek. Will soon replace the current website at iesdesarrollos.com.ar.",
+        "detail": {
+          "period": "Mar. 2026 — Jun. 2026",
+          "role": "Developer at Dagatek. I built the site end to end: Sanity content modeling, pages, SEO and deployment, with code review from the team.",
+          "context": [
+            "IES Desarrollos Inmobiliarios is a construction company in Salta, Argentina, that needed to replace its current website with one showing each development with its construction status and available units, editable by the sales team without a developer.",
+            "The result is a corporate site with a developments catalog, a slug-based page per project, a filterable units listing and a headless CMS served from the same domain."
+          ],
+          "challenges": [
+            {
+              "title": "Client-editable content with Sanity",
+              "body": "I modeled developments and units as Sanity documents and embedded the Studio inside the site itself. Pages are statically generated and revalidated on demand from an API endpoint when the client publishes a change, so the site stays fast without going stale."
+            },
+            {
+              "title": "Units on a dedicated, filterable page",
+              "body": "The units listing was outgrowing the project page, so I moved it to /proyectos/[slug]/unidades with client-side filters by type and status. The project page only links to it while units are still available."
+            },
+            {
+              "title": "Technical SEO from day one",
+              "body": "Sitemap and robots generated from CMS content, per-development metadata and images optimized with next/image, so the new site can replace the current one without losing search ranking."
+            }
+          ]
+        }
       },
       "saas": {
         "title": "Multi-Tenant SaaS Platform for Business Management",
         "badge": "Own product · In development",
-        "description": "Multi-tenant SaaS platform focused on business management for small and medium-sized businesses. Fullstack architecture with a FastAPI backend exposing REST APIs, Next.js frontend with TypeScript, and a PostgreSQL database with tenant-level data isolation. Own commercial product under active development."
+        "description": "Multi-tenant SaaS platform focused on business management for small and medium-sized businesses. Fullstack architecture with a FastAPI backend exposing REST APIs, Next.js frontend with TypeScript, and a PostgreSQL database with tenant-level data isolation. Own commercial product under active development.",
+        "detail": {
+          "period": "Mar. 2026 — Present",
+          "role": "Own product. I design and build the whole system: architecture, backend, frontend, database and infrastructure.",
+          "context": [
+            "Small retail and wholesale businesses often run sales, stock and invoicing on spreadsheets or disconnected tools. The platform aims to bring all of it together as a subscription web service.",
+            "Each business signs up as a tenant with isolated data. It covers product management, sales, inventory with stock history and electronic invoicing."
+          ],
+          "challenges": [
+            {
+              "title": "Multi-tenancy with one PostgreSQL schema per business",
+              "body": "I chose to isolate each tenant in its own schema instead of filtering by column: isolation is enforced by the database, not by every query. The cost was adapting Alembic to migrate the public schema and tenant schemas separately, backed by an integration test."
+            },
+            {
+              "title": "Electronic invoicing with AFIP",
+              "body": "Integrating with AFIP's web services requires storing each business's certificate and private key. Keys and tokens are stored encrypted, and the backend refuses to start without the encryption key, preventing data that could never be decrypted later."
+            },
+            {
+              "title": "Async backend with FastAPI and SQLAlchemy",
+              "body": "REST API built with FastAPI, async SQLAlchemy and Pydantic, consumed by a Next.js frontend in TypeScript, all containerized with Docker."
+            }
+          ]
+        }
       },
       "autoservicio": {
         "title": "Self-Service Ordering System",
         "badge": "",
-        "description": "Web application for order management in gastronomic establishments. Operates across three interfaces: customer (browsing and placing orders), kitchen (real-time order queue for cooks), and admin (product and user management). Built with Next.js App Router, Prisma ORM, PostgreSQL, and NextAuth.js."
+        "description": "Web application for order management in gastronomic establishments. Operates across three interfaces: customer (browsing and placing orders), kitchen (real-time order queue for cooks), and admin (product and user management). Built with Next.js App Router, Prisma ORM, PostgreSQL, and NextAuth.js.",
+        "detail": {
+          "period": "Jul. 2025 — Oct. 2025",
+          "role": "Solo project, built as the supervised professional internship for my University Systems Programmer degree (UNVIME).",
+          "context": [
+            "In restaurants, orders often pass from hand to hand between the floor and the kitchen, causing errors and delays. The system digitizes that flow with a web-based order ticket.",
+            "It has three interfaces: customers build and send their order, the kitchen sees the order queue and marks orders as ready, and the admin manages products and categories."
+          ],
+          "challenges": [
+            {
+              "title": "Mutations with Server Actions and Zod validation",
+              "body": "Creating and completing orders and managing products are handled with Next.js Server Actions, validating every input with Zod before it reaches Prisma. No separate API was needed for write operations."
+            },
+            {
+              "title": "Near real-time kitchen queue",
+              "body": "The kitchen view refreshes with SWR and periodic revalidation, a simple approach that avoids adding websockets for a single venue's order volume."
+            },
+            {
+              "title": "Data model with Prisma and PostgreSQL",
+              "body": "Categories, products, orders and the order-products join table modeled in Prisma, with product images uploaded to Cloudinary and access protected by NextAuth.js."
+            }
+          ]
+        }
       },
       "luso": {
         "title": "Website — Luso Estudio",
         "badge": "Client · Live",
-        "description": "First website for Luso Estudio, an Argentine creative studio focused on branding, social media, web design and audiovisual production. One-page site with an animated hero, a services list with dedicated pages per service, a featured projects gallery, a work-process section and a primary WhatsApp CTA as the conversion channel. Fully static with Next.js, self-hosted brand fonts and lightweight animations. Live at lusoestudio.com.ar."
+        "description": "First website for Luso Estudio, an Argentine creative studio focused on branding, social media, web design and audiovisual production. One-page site with an animated hero, a services list with dedicated pages per service, a featured projects gallery, a work-process section and a primary WhatsApp CTA as the conversion channel. Fully static with Next.js, self-hosted brand fonts and lightweight animations. Live at lusoestudio.com.ar.",
+        "detail": {
+          "period": "Jun. 2026",
+          "role": "Freelance, end to end: structure, implementation, brand fonts and deployment on Vercel, working directly with the studio.",
+          "context": [
+            "Luso Estudio is an Argentine creative studio offering branding, social media management, web design and audiovisual production. It had no website of its own and sold through WhatsApp and Instagram.",
+            "The goal was a lightweight site that presents the services, shows past work and takes visitors into a WhatsApp conversation with as little friction as possible."
+          ],
+          "challenges": [
+            {
+              "title": "Fully static site",
+              "body": "No backend, CMS or database: editable content lives in typed data files (services, works, testimonials) and a single config file holds WhatsApp, social links and domain. Fewer moving parts, zero hosting cost and nothing to maintain."
+            },
+            {
+              "title": "Brand identity without hurting load time",
+              "body": "Brand typefaces are self-hosted with next/font/local and animations are triggered with IntersectionObserver, keeping the visual personality without unnecessary weight."
+            },
+            {
+              "title": "Copy faithful to the brand",
+              "body": "I worked from a requirements document with the structure and copy approved by the studio, without inventing text, and gave each service its own page so it can be shared on its own."
+            }
+          ]
+        }
       },
       "mobile": {
         "title": "TuristeAR — Tourism Mobile App",
         "badge": "",
-        "description": "Mobile app to discover tourism, cultural and food experiences across Argentina. Features highlighted activities, search and category filters, detail pages with price, duration, difficulty and direct WhatsApp contact, per-user favorites and an admin panel. Built with React Native, TypeScript, Expo and Supabase."
+        "description": "Mobile app to discover tourism, cultural and food experiences across Argentina. Features highlighted activities, search and category filters, detail pages with price, duration, difficulty and direct WhatsApp contact, per-user favorites and an admin panel. Built with React Native, TypeScript, Expo and Supabase.",
+        "detail": {
+          "period": "Feb. 2026 — Present",
+          "role": "Developer in a team of two. I worked on the app and the Supabase backend: screens, services, security policies and payments.",
+          "context": [
+            "TuristeAR is an app to discover tourism, cultural and food experiences in Argentina, where providers publish their activities and users find them, save them and contact the provider.",
+            "The app is not yet published on the stores: it is tested through internal builds while the payments integration is completed."
+          ],
+          "challenges": [
+            {
+              "title": "Row-level security in Supabase",
+              "body": "Permissions for users, providers and admins are enforced with PostgreSQL RLS policies, verified with pgTAP tests against a local Supabase stack before each migration is applied."
+            },
+            {
+              "title": "Mercado Pago payments in Edge Functions",
+              "body": "Payment preference creation, the webhook and the payment return run in Supabase Edge Functions, and the app resumes the right flow through deep links."
+            },
+            {
+              "title": "Image uploads with signed URLs",
+              "body": "Activity images are uploaded to Cloudflare R2 through signed URLs generated on the server, so the app uploads straight to storage without handling any keys."
+            }
+          ]
+        }
       }
     }
   },

@@ -45,31 +45,152 @@
     "featuredLabel": "Proyecto destacado",
     "codeLabel": "Código",
     "liveLabel": "Ver sitio",
+    "detailLabels": {
+      "back": "Volver a proyectos",
+      "context": "Contexto",
+      "role": "Mi rol",
+      "period": "Período",
+      "stack": "Stack",
+      "challenges": "Decisiones técnicas y desafíos",
+      "prev": "Anterior",
+      "next": "Siguiente",
+      "viewDetail": "Ver detalle"
+    },
     "items": {
       "ies": {
         "title": "Sitio Corporativo — IES Desarrollos Inmobiliarios",
         "badge": "En desarrollo · Próximo lanzamiento",
-        "description": "Sitio corporativo en desarrollo para IES Desarrollos Inmobiliarios, empresa del sector construcción en Salta Capital. Incluye hero multi-slide, catálogo de desarrollos con filtros dinámicos por estado, páginas detalle generadas por slug, formulario de contacto con integración a WhatsApp y CMS headless con Sanity para gestión de contenido por parte del cliente. Desarrollado en Dagatek. Próximamente reemplazará al sitio actual en iesdesarrollos.com.ar."
+        "description": "Sitio corporativo en desarrollo para IES Desarrollos Inmobiliarios, empresa del sector construcción en Salta Capital. Incluye hero multi-slide, catálogo de desarrollos con filtros dinámicos por estado, páginas detalle generadas por slug, formulario de contacto con integración a WhatsApp y CMS headless con Sanity para gestión de contenido por parte del cliente. Desarrollado en Dagatek. Próximamente reemplazará al sitio actual en iesdesarrollos.com.ar.",
+        "detail": {
+          "period": "Mar. 2026 — Jun. 2026",
+          "role": "Desarrollador en Dagatek. Implementé el sitio de punta a punta: modelado de contenido en Sanity, páginas, SEO y deploy, con revisión de código del equipo.",
+          "context": [
+            "IES Desarrollos Inmobiliarios es una constructora de Salta Capital que necesitaba reemplazar su sitio actual por uno que mostrara cada desarrollo con su estado de obra y sus unidades disponibles, y que el equipo comercial pudiera actualizar sin depender de un desarrollador.",
+            "El resultado es un sitio corporativo con catálogo de desarrollos, página propia por proyecto generada por slug, listado de unidades con filtros y un CMS headless integrado en el mismo dominio."
+          ],
+          "challenges": [
+            {
+              "title": "Contenido editable por el cliente con Sanity",
+              "body": "Modelé desarrollos y unidades como documentos de Sanity y embebí el Studio dentro del propio sitio. Las páginas se generan estáticamente y se revalidan bajo demanda desde un endpoint de la API cuando el cliente publica un cambio, así el sitio queda rápido sin quedar desactualizado."
+            },
+            {
+              "title": "Unidades en una página dedicada con filtros",
+              "body": "El listado de unidades crecía demasiado dentro de la página del proyecto, así que lo moví a /proyectos/[slug]/unidades con filtros client-side por tipo y estado. La página del proyecto solo muestra el acceso cuando quedan unidades disponibles."
+            },
+            {
+              "title": "SEO técnico desde el día uno",
+              "body": "Sitemap y robots generados desde el contenido del CMS, metadata por desarrollo e imágenes optimizadas con next/image, pensando en que el sitio nuevo reemplace al actual sin perder posicionamiento."
+            }
+          ]
+        }
       },
       "saas": {
         "title": "Plataforma SaaS Multi-Tenant para Gestión Empresarial",
         "badge": "Producto propio · En desarrollo",
-        "description": "Plataforma SaaS multi-tenant orientada a la gestión empresarial para pequeños y medianos comercios. Arquitectura fullstack con backend en FastAPI exponiendo APIs REST, frontend en Next.js con TypeScript y base de datos PostgreSQL con aislamiento de datos por tenant. Proyecto comercial propio en desarrollo activo."
+        "description": "Plataforma SaaS multi-tenant orientada a la gestión empresarial para pequeños y medianos comercios. Arquitectura fullstack con backend en FastAPI exponiendo APIs REST, frontend en Next.js con TypeScript y base de datos PostgreSQL con aislamiento de datos por tenant. Proyecto comercial propio en desarrollo activo.",
+        "detail": {
+          "period": "Mar. 2026 — Presente",
+          "role": "Producto propio. Diseño y desarrollo todo el sistema: arquitectura, backend, frontend, base de datos e infraestructura.",
+          "context": [
+            "Los comercios minoristas y mayoristas chicos suelen manejar ventas, stock y facturación con planillas o sistemas separados. La plataforma busca resolver eso en un solo lugar, como servicio web por suscripción.",
+            "Cada comercio se registra como tenant con sus datos aislados. Incluye gestión de productos, ventas, inventario con historial de stock y facturación electrónica."
+          ],
+          "challenges": [
+            {
+              "title": "Multi-tenancy con un schema de PostgreSQL por comercio",
+              "body": "Elegí aislar cada tenant en su propio schema en lugar de filtrar por columna: el aislamiento lo garantiza la base y no cada query. El costo fue adaptar Alembic para migrar el schema público y los schemas de tenant por separado, con un test de integración que lo verifica."
+            },
+            {
+              "title": "Facturación electrónica con AFIP",
+              "body": "La integración con los web services de AFIP exige guardar el certificado y la clave privada de cada comercio. Las claves y los tokens se guardan cifrados, y el backend se niega a arrancar si falta la clave de cifrado, para evitar datos que después no se puedan descifrar."
+            },
+            {
+              "title": "Backend async con FastAPI y SQLAlchemy",
+              "body": "API REST con FastAPI, SQLAlchemy async y Pydantic, consumida por un frontend en Next.js con TypeScript, todo containerizado con Docker."
+            }
+          ]
+        }
       },
       "autoservicio": {
         "title": "Sistema de Autoservicio Gastronómico",
         "badge": "",
-        "description": "Aplicación web para toma de pedidos en locales gastronómicos. Funciona a través de tres interfaces: cliente (navegación y realización de pedidos), cocina (cola de pedidos en tiempo real para cocineros) y administrador (gestión de productos y usuarios). Construido con Next.js App Router, Prisma ORM, PostgreSQL y NextAuth.js."
+        "description": "Aplicación web para toma de pedidos en locales gastronómicos. Funciona a través de tres interfaces: cliente (navegación y realización de pedidos), cocina (cola de pedidos en tiempo real para cocineros) y administrador (gestión de productos y usuarios). Construido con Next.js App Router, Prisma ORM, PostgreSQL y NextAuth.js.",
+        "detail": {
+          "period": "Jul. 2025 — Oct. 2025",
+          "role": "Proyecto individual, desarrollado como Práctica Profesional Supervisada de la carrera de Programador Universitario de Sistemas (UNVIME).",
+          "context": [
+            "En los locales gastronómicos los pedidos suelen pasar de mano en mano entre salón y cocina, con errores y demoras. El sistema digitaliza ese circuito con una comanda web.",
+            "Tiene tres interfaces: el cliente arma y envía su pedido, la cocina ve la cola de pedidos y los marca como listos, y el administrador gestiona productos y categorías."
+          ],
+          "challenges": [
+            {
+              "title": "Mutaciones con Server Actions y validación con Zod",
+              "body": "Crear pedidos, completarlos y administrar productos se resuelve con Server Actions de Next.js, validando cada entrada con Zod antes de llegar a Prisma. Así no hizo falta una API aparte para las operaciones de escritura."
+            },
+            {
+              "title": "Cola de cocina casi en tiempo real",
+              "body": "La vista de cocina se actualiza con SWR y revalidación periódica, una solución simple que evita sumar websockets para el volumen de pedidos de un local."
+            },
+            {
+              "title": "Modelo de datos con Prisma y PostgreSQL",
+              "body": "Categorías, productos, pedidos y la tabla intermedia de productos por pedido modelados en Prisma, con imágenes de productos subidas a Cloudinary y acceso protegido con NextAuth.js."
+            }
+          ]
+        }
       },
       "luso": {
         "title": "Sitio Web — Luso Estudio",
         "badge": "Cliente · En producción",
-        "description": "Primer sitio web de Luso Estudio, estudio creativo argentino de branding, redes sociales, diseño web y producción audiovisual. One-page con hero animado, listado de servicios con páginas propias por servicio, galería de proyectos destacados, proceso de trabajo y CTA principal a WhatsApp como canal de conversión. 100% estático con Next.js, tipografías de marca locales y animaciones livianas. Publicado en lusoestudio.com.ar."
+        "description": "Primer sitio web de Luso Estudio, estudio creativo argentino de branding, redes sociales, diseño web y producción audiovisual. One-page con hero animado, listado de servicios con páginas propias por servicio, galería de proyectos destacados, proceso de trabajo y CTA principal a WhatsApp como canal de conversión. 100% estático con Next.js, tipografías de marca locales y animaciones livianas. Publicado en lusoestudio.com.ar.",
+        "detail": {
+          "period": "Jun. 2026",
+          "role": "Desarrollo freelance de punta a punta: estructura, implementación, fuentes de marca y deploy en Vercel, trabajando directo con el estudio.",
+          "context": [
+            "Luso Estudio es un estudio creativo argentino que ofrece branding, gestión de redes, diseño web y producción audiovisual. No tenía sitio propio y su canal de ventas era WhatsApp e Instagram.",
+            "El objetivo fue un sitio liviano que presentara los servicios, mostrara trabajos y llevara al visitante a una conversación por WhatsApp con el menor rozamiento posible."
+          ],
+          "challenges": [
+            {
+              "title": "Sitio 100% estático",
+              "body": "Sin backend, CMS ni base de datos: el contenido editable vive en archivos de datos tipados (servicios, trabajos, testimonios) y un único archivo de configuración concentra WhatsApp, redes y dominio. Menos piezas, costo de hosting nulo y nada que mantener."
+            },
+            {
+              "title": "Identidad de marca sin penalizar la carga",
+              "body": "Las tipografías de marca se sirven localmente con next/font/local y las animaciones se dispararon con IntersectionObserver, para mantener la personalidad visual sin agregar peso innecesario."
+            },
+            {
+              "title": "Copy fiel a la marca",
+              "body": "Trabajé sobre un documento de requerimientos con la estructura y los textos aprobados por el estudio, sin inventar copy, y con una página propia por servicio para poder compartir cada uno por separado."
+            }
+          ]
+        }
       },
       "mobile": {
         "title": "TuristeAR — App Móvil de Turismo",
         "badge": "",
-        "description": "Aplicación móvil para descubrir actividades turísticas, culturales y gastronómicas en Argentina. Incluye actividades destacadas, búsqueda y filtros por categoría, fichas de detalle con precio, duración, dificultad y contacto directo por WhatsApp, favoritos por usuario y panel de administración. Construida con React Native, TypeScript, Expo y Supabase."
+        "description": "Aplicación móvil para descubrir actividades turísticas, culturales y gastronómicas en Argentina. Incluye actividades destacadas, búsqueda y filtros por categoría, fichas de detalle con precio, duración, dificultad y contacto directo por WhatsApp, favoritos por usuario y panel de administración. Construida con React Native, TypeScript, Expo y Supabase.",
+        "detail": {
+          "period": "Feb. 2026 — Presente",
+          "role": "Desarrollador en un equipo de dos. Trabajé sobre la app y el backend en Supabase: pantallas, servicios, políticas de seguridad y pagos.",
+          "context": [
+            "TuristeAR es una app para descubrir actividades turísticas, culturales y gastronómicas en Argentina, donde los prestadores publican sus actividades y los usuarios las encuentran, las guardan y contactan al prestador.",
+            "La app todavía no está publicada en las tiendas: se prueba con builds internas mientras se completa la integración de pagos."
+          ],
+          "challenges": [
+            {
+              "title": "Seguridad a nivel de fila en Supabase",
+              "body": "Los permisos de usuarios, prestadores y administradores se resuelven con políticas RLS en PostgreSQL, verificadas con tests pgTAP contra un stack local de Supabase antes de aplicar cada migración."
+            },
+            {
+              "title": "Pagos con Mercado Pago en Edge Functions",
+              "body": "La creación de preferencias, el webhook y el retorno de pago corren en Edge Functions de Supabase, y la app vuelve al flujo correcto mediante deep links."
+            },
+            {
+              "title": "Subida de imágenes con URLs firmadas",
+              "body": "Las imágenes de las actividades se suben a Cloudflare R2 mediante URLs firmadas que genera el servidor, así la app sube directo al almacenamiento sin manejar ninguna clave."
+            }
+          ]
+        }
       }
     }
   },

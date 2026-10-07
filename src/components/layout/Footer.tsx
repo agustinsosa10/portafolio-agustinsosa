@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server'
 import { Github, Linkedin, Twitter } from 'lucide-react'
+import { Link } from '@/i18n/navigation'
 import { NAV_HREFS, SOCIAL_LINKS } from '@/lib/constants'
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -26,13 +27,13 @@ export default async function Footer() {
 
           <div className="flex flex-col items-start md:items-center gap-2">
             {NAV_HREFS.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="text-sm text-brand-body hover:text-brand-accent transition-colors duration-200"
               >
                 {tNav(link.key as Parameters<typeof tNav>[0])}
-              </a>
+              </Link>
             ))}
           </div>
 
