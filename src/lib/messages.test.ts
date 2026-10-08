@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import en from '../../messages/en.json'
 import es from '../../messages/es.json'
-import { PROJECTS } from '@/lib/constants'
+import { EXPERIENCE_IDS, EXPERIENCE_PERIODS, PROJECTS } from '@/lib/constants'
 
 interface Detail {
   period: string
@@ -81,4 +81,16 @@ describe('projects.items.<id>.detail', () => {
       })
     })
   }
+})
+
+describe('experience', () => {
+  it('dagatek period ends in May 2026', () => {
+    expect(EXPERIENCE_PERIODS.dagatek).toBe('Ene. 2026 — May. 2026')
+  })
+
+  it.each(EXPERIENCE_IDS)('%s has the same keys in es and en', (id) => {
+    const items = (m: unknown) =>
+      (m as { experience: { items: Record<string, Record<string, string>> } }).experience.items
+    expect(Object.keys(items(es)[id]).sort()).toEqual(Object.keys(items(en)[id]).sort())
+  })
 })

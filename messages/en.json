@@ -62,8 +62,8 @@
         "badge": "In development · Upcoming launch",
         "description": "Corporate website in development for IES Desarrollos Inmobiliarios, a construction company based in Salta, Argentina. Features a multi-slide hero, a projects catalog with dynamic filters by status, slug-based detail pages, a contact form with WhatsApp integration, and Sanity headless CMS for client-managed content. Developed at Dagatek. Will soon replace the current website at iesdesarrollos.com.ar.",
         "detail": {
-          "period": "Mar. 2026 — Jun. 2026",
-          "role": "Developer at Dagatek. I built the site end to end: Sanity content modeling, pages, SEO and deployment, with code review from the team.",
+          "period": "Mar. 2026 — May. 2026",
+          "role": "Remote freelance developer at Dagatek. I built the site end to end: Sanity content modeling, pages, SEO and deployment.",
           "context": [
             "IES Desarrollos Inmobiliarios is a construction company in Salta, Argentina, that needed to replace its current website with one showing each development with its construction status and available units, editable by the sales team without a developer.",
             "The result is a corporate site with a developments catalog, a slug-based page per project, a filterable units listing and a headless CMS served from the same domain."
@@ -144,7 +144,7 @@
         "description": "First website for Luso Estudio, an Argentine creative studio focused on branding, social media, web design and audiovisual production. One-page site with an animated hero, a services list with dedicated pages per service, a featured projects gallery, a work-process section and a primary WhatsApp CTA as the conversion channel. Fully static with Next.js, self-hosted brand fonts and lightweight animations. Live at lusoestudio.com.ar.",
         "detail": {
           "period": "Jun. 2026",
-          "role": "Freelance, end to end: structure, implementation, brand fonts and deployment on Vercel, working directly with the studio.",
+          "role": "Freelance project built as a team: landing page, service pages, work portfolio, FAQ and deployment on Vercel.",
           "context": [
             "Luso Estudio is an Argentine creative studio offering branding, social media management, web design and audiovisual production. It had no website of its own and sold through WhatsApp and Instagram.",
             "The goal was a lightweight site that presents the services, shows past work and takes visitors into a WhatsApp conversation with as little friction as possible."
@@ -171,10 +171,10 @@
         "description": "Mobile app to discover tourism, cultural and food experiences across Argentina. Features highlighted activities, search and category filters, detail pages with price, duration, difficulty and direct WhatsApp contact, per-user favorites and an admin panel. Built with React Native, TypeScript, Expo and Supabase.",
         "detail": {
           "period": "Feb. 2026 — Present",
-          "role": "Developer in a team of two. I worked on the app and the Supabase backend: screens, services, security policies and payments.",
+          "role": "Freelance project for a client, built in a team of two. I worked on the app and the Supabase backend: screens, services, security policies and payments.",
           "context": [
-            "TuristeAR is an app to discover tourism, cultural and food experiences in Argentina, where providers publish their activities and users find them, save them and contact the provider.",
-            "The app is not yet published on the stores: it is tested through internal builds while the payments integration is completed."
+            "TuristeAR is an app to discover tourist attractions and activities in Argentina by location. Providers publish their activities through in-app subscription plans, and users find them, save them and contact the provider.",
+            "The app is in testing through internal builds and includes an admin panel to manage users, activities and reports."
           ],
           "challenges": [
             {
@@ -212,10 +212,10 @@
       "dagatek": {
         "role": "Software Developer",
         "company": "Dagatek – Software Solutions Startup",
-        "description": "Fullstack development in a real production environment, working on an existing codebase within a multidisciplinary team.",
-        "highlight0": "End-to-end development of a corporate website for a client in the real estate/construction sector using Next.js, TypeScript, TailwindCSS, and Sanity CMS: multi-slide hero landing, projects catalog with dynamic filters, slug-based detail pages, contact form, and WhatsApp integration.",
-        "highlight1": "Extension and maintenance of production landings with Next.js and TailwindCSS: implementation of new sections, reusable components, image optimization with Next/Image, and debugging of functional errors ensuring cross-browser consistency.",
-        "highlight2": "Collaboration on the backend stack with FastAPI, PostgreSQL, and Docker: supporting containerization with Docker Compose. Professional workflow with Git/GitHub, pull requests, and code reviews in a multidisciplinary team."
+        "description": "Remote freelance development for the startup's clients, on production websites and an e-commerce store.",
+        "highlight0": "Built the corporate website for IES Desarrollos Inmobiliarios with Next.js, TypeScript, TailwindCSS and Sanity CMS: multi-slide hero landing, projects catalog with dynamic filters, per-project detail pages, contact form and WhatsApp integration.",
+        "highlight1": "Built a new section for a production website with Next.js and TailwindCSS.",
+        "highlight2": "Fixed a functional bug in a production e-commerce store that prevented loading more than 10 variants per product."
       }
     }
   },
