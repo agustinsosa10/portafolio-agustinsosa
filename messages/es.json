@@ -31,7 +31,7 @@
     "photoAlt": "Marcelo Sosa",
     "bio0": "Soy desarrollador de software basado en San Luis, Argentina, con enfoque en backend y fullstack. Trabajo con Python, FastAPI, React y Next.js para construir soluciones funcionales y escalables — desde el diseño de APIs REST hasta aplicaciones web completas.",
     "bio1": "Me gradué como Programador Universitario de Sistemas en la Universidad Nacional de Villa Mercedes y actualmente estoy cursando la Ingeniería en Sistemas de Información en la misma institución. Mi formación me da una base sólida en arquitectura de software, modelado de datos y diseño de sistemas.",
-    "bio2": "Actualmente desarrollo una plataforma SaaS multi-tenant como producto propio, mientras trabajo como developer en Dagatek construyendo sitios corporativos para clientes del sector inmobiliario y otros rubros. Me motiva resolver problemas reales con código limpio y bien organizado, y me adapto rápidamente a nuevas tecnologías y contextos.",
+    "bio2": "Actualmente desarrollo una plataforma SaaS multi-tenant como producto propio. Entre enero y mayo de 2026 trabajé como developer freelance en Dagatek, construyendo sitios web para clientes del sector inmobiliario y otros rubros. Me motiva resolver problemas reales con código limpio y bien organizado, y me adapto rápidamente a nuevas tecnologías y contextos.",
     "educationLabel": "Formación",
     "ingSistemas": "Ingeniería en Sistemas de Información",
     "progUniversitario": "Programador Universitario de Sistemas",
@@ -62,8 +62,8 @@
         "badge": "En desarrollo · Próximo lanzamiento",
         "description": "Sitio corporativo en desarrollo para IES Desarrollos Inmobiliarios, empresa del sector construcción en Salta Capital. Incluye hero multi-slide, catálogo de desarrollos con filtros dinámicos por estado, páginas detalle generadas por slug, formulario de contacto con integración a WhatsApp y CMS headless con Sanity para gestión de contenido por parte del cliente. Desarrollado en Dagatek. Próximamente reemplazará al sitio actual en iesdesarrollos.com.ar.",
         "detail": {
-          "period": "Mar. 2026 — Jun. 2026",
-          "role": "Desarrollador en Dagatek. Implementé el sitio de punta a punta: modelado de contenido en Sanity, páginas, SEO y deploy, con revisión de código del equipo.",
+          "period": "Mar. 2026 — May. 2026",
+          "role": "Desarrollador freelance en Dagatek, de forma remota. Implementé el sitio de punta a punta: modelado de contenido en Sanity, páginas, SEO y deploy.",
           "context": [
             "IES Desarrollos Inmobiliarios es una constructora de Salta Capital que necesitaba reemplazar su sitio actual por uno que mostrara cada desarrollo con su estado de obra y sus unidades disponibles, y que el equipo comercial pudiera actualizar sin depender de un desarrollador.",
             "El resultado es un sitio corporativo con catálogo de desarrollos, página propia por proyecto generada por slug, listado de unidades con filtros y un CMS headless integrado en el mismo dominio."
@@ -144,7 +144,7 @@
         "description": "Primer sitio web de Luso Estudio, estudio creativo argentino de branding, redes sociales, diseño web y producción audiovisual. One-page con hero animado, listado de servicios con páginas propias por servicio, galería de proyectos destacados, proceso de trabajo y CTA principal a WhatsApp como canal de conversión. 100% estático con Next.js, tipografías de marca locales y animaciones livianas. Publicado en lusoestudio.com.ar.",
         "detail": {
           "period": "Jun. 2026",
-          "role": "Desarrollo freelance de punta a punta: estructura, implementación, fuentes de marca y deploy en Vercel, trabajando directo con el estudio.",
+          "role": "Proyecto freelance desarrollado en equipo: landing, páginas de servicios, portfolio de trabajos, preguntas frecuentes y deploy en Vercel.",
           "context": [
             "Luso Estudio es un estudio creativo argentino que ofrece branding, gestión de redes, diseño web y producción audiovisual. No tenía sitio propio y su canal de ventas era WhatsApp e Instagram.",
             "El objetivo fue un sitio liviano que presentara los servicios, mostrara trabajos y llevara al visitante a una conversación por WhatsApp con el menor rozamiento posible."
@@ -171,10 +171,10 @@
         "description": "Aplicación móvil para descubrir actividades turísticas, culturales y gastronómicas en Argentina. Incluye actividades destacadas, búsqueda y filtros por categoría, fichas de detalle con precio, duración, dificultad y contacto directo por WhatsApp, favoritos por usuario y panel de administración. Construida con React Native, TypeScript, Expo y Supabase.",
         "detail": {
           "period": "Feb. 2026 — Presente",
-          "role": "Desarrollador en un equipo de dos. Trabajé sobre la app y el backend en Supabase: pantallas, servicios, políticas de seguridad y pagos.",
+          "role": "Proyecto freelance para un cliente, desarrollado en un equipo de dos. Trabajé sobre la app y el backend en Supabase: pantallas, servicios, políticas de seguridad y pagos.",
           "context": [
-            "TuristeAR es una app para descubrir actividades turísticas, culturales y gastronómicas en Argentina, donde los prestadores publican sus actividades y los usuarios las encuentran, las guardan y contactan al prestador.",
-            "La app todavía no está publicada en las tiendas: se prueba con builds internas mientras se completa la integración de pagos."
+            "TuristeAR es una app para descubrir atracciones y actividades turísticas en Argentina por ubicación. Los prestadores publican sus actividades con planes de suscripción in-app, y los usuarios las encuentran, las guardan y contactan al prestador.",
+            "La app está en etapa de testing con builds internas e incluye un panel de administración para gestionar usuarios, actividades y reportes."
           ],
           "challenges": [
             {
@@ -212,10 +212,10 @@
       "dagatek": {
         "role": "Software Developer",
         "company": "Dagatek – Software Solutions Startup",
-        "description": "Desarrollo fullstack en entorno productivo real, trabajando sobre codebase existente dentro de un equipo multidisciplinario.",
-        "highlight0": "Desarrollo end-to-end del sitio web corporativo para un cliente del sector inmobiliario/construcción con Next.js, TypeScript, TailwindCSS y Sanity CMS: landing con hero multi-slide, catálogo de proyectos con filtros dinámicos, páginas detalle por slug, formulario de contacto e integración con WhatsApp.",
-        "highlight1": "Extensión y mantenimiento de landings en producción con Next.js y TailwindCSS: implementación de nuevas secciones, componentes reutilizables, optimización de imágenes con Next/Image y debugging de errores funcionales asegurando consistencia cross-browser.",
-        "highlight2": "Colaboración en stack backend con FastAPI, PostgreSQL y Docker: apoyo en containerización con Docker Compose. Flujo profesional con Git/GitHub, pull requests y code reviews en equipo multidisciplinario."
+        "description": "Desarrollo freelance y remoto para clientes de la startup, sobre sitios web y un e-commerce en producción.",
+        "highlight0": "Desarrollo del sitio web corporativo de IES Desarrollos Inmobiliarios con Next.js, TypeScript, TailwindCSS y Sanity CMS: landing con hero multi-slide, catálogo de proyectos con filtros dinámicos, páginas de detalle por proyecto, formulario de contacto e integración con WhatsApp.",
+        "highlight1": "Desarrollo de una nueva sección en un sitio web en producción con Next.js y TailwindCSS.",
+        "highlight2": "Corrección de un error funcional en un e-commerce en producción que impedía cargar más de 10 variantes por producto."
       }
     }
   },

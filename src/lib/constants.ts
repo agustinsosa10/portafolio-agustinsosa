@@ -90,7 +90,7 @@ export const SKILL_NAMES: Record<string, string[]> = {
 export const EXPERIENCE_IDS = ['dagatek']
 
 export const EXPERIENCE_PERIODS: Record<string, string> = {
-  dagatek: 'Ene. 2026 — Presente',
+  dagatek: 'Ene. 2026 — May. 2026',
 }
 
 export const EDUCATION = [
